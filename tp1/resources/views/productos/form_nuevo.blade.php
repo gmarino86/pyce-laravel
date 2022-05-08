@@ -1,3 +1,10 @@
+<?php
+/**
+ * @var \Illuminate\Support\ViewErrorBag $errors;
+ * @var \App\Models\ProductoTipo[] | \Illuminate\Database\Eloquent\Collection $tipoProductos
+ */
+?>
+
 @extends('layout.main')
 @section('title', 'Nuevo Producto')
 @section('main')
@@ -55,17 +62,12 @@
 
         <div class="mb-3">
             <label for="producto_tipo_id" class="form-label">Tipo de producto</label>
-            <input
-                type="text"
-                id="producto_tipo_id"
-                name="producto_tipo_id"
-                class="form-control @error('producto_tipo_id') is-invalid @enderror"
-                @error('producto_tipo_id') aria-describedby="error-producto_tipo_id" @enderror
-                value="{{ old('producto_tipo_id') }}"
-            >
-            @error('producto_tipo_id')
-            <div class="text-danger" id="error-producto_tipo_id">{{ $message }}</div>
-            @enderror
+            <select name="producto_tipo_id" id="producto_tipo_id" class="form-control">
+                <option value="">Elegir el tipo de producto</option>
+                @foreach($tipoProductos as $tp)
+                    <option value="{{ $tp->producto_tipo_id }}">{{ $tp->nombre }}</option>
+                @endforeach
+            </select>
         </div>
        {{-- <div class="mb-3">
             <label for="fecha_estreno" class="form-label">Fecha de Estreno</label>

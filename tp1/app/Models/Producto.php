@@ -26,6 +26,7 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|Producto whereProductoTipoId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Producto whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @property-read \App\Models\ProductoTipo $tipoProducto
  */
 class Producto extends Model
 {
@@ -48,4 +49,12 @@ class Producto extends Model
         'descripcion.required'  => 'La descripcion es requerida'
     ];
 
+    /**
+     * RELACION TIPO PRODUCTO
+     * Con el metodo referencio su uso
+     */
+    public function tipoProducto()
+    {
+        return $this->belongsTo(ProductoTipo::class, 'producto_tipo_id','producto_tipo_id');
+    }
 }

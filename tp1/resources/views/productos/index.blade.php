@@ -11,6 +11,8 @@
     <p>Listado de todos los Productos</p>
 
     <a href="{{ route('producto.nuevo.form') }}">Agregar nuevo producto</a>
+
+    @if($productos->isNotEmpty())
     <table class="table table-striped table-bordered">
         <thead>
         <tr>
@@ -18,6 +20,7 @@
             <td>Nombre</td>
             <td>Descripcion</td>
             <td>Precio</td>
+            <td>Tipo</td>
             <td>Acciones</td>
         </tr>
         </thead>
@@ -29,6 +32,7 @@
             <td>{{ $p->nombre }}</td>
             <td>{{ $p->descripcion }}</td>
             <td>$ {{ $p->precio/100 }}</td>
+            <td>{{ $p->tipoProducto->nombre }}</td>
             <td>
                 <div class="d-flex">
                     <a class="btn btn-primary mx-1" href="{{ route('producto.ver', ['id' => $p->producto_id]) }}">Ver</a>
@@ -44,4 +48,7 @@
         endforeach; ?>
         </tbody>
     </table>
+    @else
+        <p class="my-4">Aún no hay productos.</p>
+    @endif
 @endsection

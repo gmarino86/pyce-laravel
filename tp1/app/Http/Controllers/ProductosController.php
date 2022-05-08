@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Producto;
+use App\Models\ProductoTipo;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 
@@ -15,7 +16,8 @@ class ProductosController extends Controller
      */
     public function index()
     {
-        $productos = Producto::all();
+        //$productos = Producto::all();
+        $productos = Producto::with(['tipoProducto'])->get();
 
         return view('productos/index', [
             'productos' => $productos
@@ -45,7 +47,10 @@ class ProductosController extends Controller
      */
     public function formCrear()
     {
-        return view('productos/form_nuevo' );
+        $tipoProductos = ProductoTipo::all();
+        return view('productos/form_nuevo', [
+            'tipoProductos' => $tipoProductos
+        ]);
     }
 
     /**
@@ -64,7 +69,6 @@ class ProductosController extends Controller
         return $this->toRoute('productos.index', [
             'success' => 'El producto de agregó con éxito'
         ]);
-
     }
 
     /**
@@ -84,7 +88,6 @@ class ProductosController extends Controller
         return $this->toRoute('productos.index', [
             'success' => 'El producto se eliminó con éxito'
         ]);
-
     }
 
     /**
@@ -120,7 +123,6 @@ class ProductosController extends Controller
         return $this->toRoute('productos.index', [
             'success' => 'El producto se editó con éxito'
         ]);
-
     }
 
     /**
@@ -133,13 +135,11 @@ class ProductosController extends Controller
      */
     protected function toRoute(string $route, array $messages = []) :RedirectResponse
     {
-        $redirect = redirect()->route('productos.index');
+        $redirect = redirect()->route($route);
 
         foreach ($messages as $type=> $message){
             $redirect->with('message.' . $type, $message);
         }
-
         return $redirect;
     }
-
 }
