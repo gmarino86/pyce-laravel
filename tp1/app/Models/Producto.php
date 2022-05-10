@@ -36,17 +36,21 @@ class Producto extends Model
     protected $fillable = ['nombre','descripcion','precio','producto_tipo_id'];
 
     public static $rules = [
-        'nombre'        => 'required|min:2',
-        'precio'        => 'required|numeric',
-        'descripcion'   => 'required'
+        'nombre'            => 'required|min:2',
+        'precio'            => 'required|numeric',
+        'descripcion'       => 'required',
+        'producto_tipo_id'  => 'required|exists:tipo_producto'
     ];
 
     public static $rulesMessages = [
-        'nombre.required'       => 'El nombre es requerido',
-        'nombre.min'            => 'El nombre debe tener al menos 2 caracteres',
-        'precio.required'       => 'El precio es requerido',
-        'precio.numeric'        => 'El precio debe ser un número',
-        'descripcion.required'  => 'La descripcion es requerida'
+        'nombre.required'               => 'El nombre es requerido',
+        'nombre.min'                    => 'El nombre debe tener al menos 2 caracteres',
+        'precio.required'               => 'El precio es requerido',
+        'precio.numeric'                => 'El precio debe ser un número',
+        'descripcion.required'          => 'La descripcion es requerida',
+        'producto_tipo_id.required'     => 'Ingrese el tipo de producto',
+        'producto_tipo_id.exists'       => 'El valor ingresado no existe',
+
     ];
 
     /**

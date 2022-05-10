@@ -19,5 +19,4 @@ Route::post('producto/{id}/eliminar',[\App\Http\Controllers\ProductosController:
 Route::get('producto/{id}/editar',[\App\Http\Controllers\ProductosController::class, 'editarForm'])->name('producto.editar.form');
 Route::post('producto/{id}/editar',[\App\Http\Controllers\ProductosController::class, 'editarGrabar'])->name('producto.editar.grabar');
 
-
 Route::get('admin/dashboard',[\App\Http\Controllers\AdminController::class, 'dashboard']);

@@ -97,10 +97,12 @@ class ProductosController extends Controller
      */
     public function editarForm(int $id)
     {
+        $tipoProductos = ProductoTipo::all();
         $producto = Producto::findOrFail($id);
 
         return view('productos/form_editar',[
-            'producto' => $producto
+            'producto'      => $producto,
+            'tipoProductos' => $tipoProductos
         ]);
     }
 

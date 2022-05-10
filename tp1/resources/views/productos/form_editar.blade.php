@@ -2,6 +2,8 @@
 /**
  * @var \Illuminate\Support\ViewErrorBag $errors;
  * @var \App\Models\Producto $producto;
+ * @var \App\Models\ProductoTipo[] | \Illuminate\Database\Eloquent\Collection $tipoProductos
+
  */
 ?>
 @extends('layout.main')
@@ -61,32 +63,25 @@
 
         <div class="mb-3">
             <label for="producto_tipo_id" class="form-label">Tipo de producto</label>
-            <input
-                type="text"
-                id="producto_tipo_id"
+            <select
                 name="producto_tipo_id"
+                id="producto_tipo_id"
                 class="form-control @error('producto_tipo_id') is-invalid @enderror"
                 @error('producto_tipo_id') aria-describedby="error-producto_tipo_id" @enderror
-                value="{{ old('producto_tipo_id', $producto->producto_tipo_id) }}"
             >
+                <option value="">Elegir el tipo de producto</option>
+                @foreach($tipoProductos as $tp)
+                    <option
+                        value="{{ $tp->producto_tipo_id }}"
+                        @selected($tp->producto_tipo_id == old('producto_tipo_id', $producto->producto_tipo_id))
+                    >{{ $tp->nombre }}</option>
+                @endforeach
+            </select>
             @error('producto_tipo_id')
             <div class="text-danger" id="error-producto_tipo_id">{{ $message }}</div>
             @enderror
         </div>
-       {{-- <div class="mb-3">
-            <label for="fecha_estreno" class="form-label">Fecha de Estreno</label>
-            <input
-                type="date"
-                id="fecha_estreno"
-                name="fecha_estreno"
-                class="form-control @error('fecha_estreno') is-invalid @enderror"
-                @error('fecha_estreno') aria-describedby="error-fecha_estreno" @enderror
-                value="{{ old('fecha_estreno') }}"
-            >
-            @error('fecha_estreno')
-            <div class="text-danger" id="error-fecha_estreno">{{ $message }}</div>
-            @enderror
-        </div>--}}
+
 
         <button type="submit" class="btn btn-primary">Editar</button>
     </form>
