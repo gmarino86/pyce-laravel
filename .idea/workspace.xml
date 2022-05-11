@@ -2,52 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8aa4e76d-b682-4f8b-b9f8-715420b601e9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp1/app/Http/Controllers/ErresBlogController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp1/datos.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp1/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp1/public/img/arranque20x30.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp1/public/img/background-black.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp1/public/img/camiseta40x50.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp1/public/img/concienciaAmbiental.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp1/public/img/consumoResponsable.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp1/public/img/economiaCircular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp1/public/img/erres-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp1/public/img/ourProp.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp1/public/img/residuo45x60.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp1/public/img/solucionesSustentables.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp1/public/js/erres.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp1/resources/views/erresBlog.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/app/Http/Controllers/AboutController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/app/Http/Controllers/ProductosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp1/app/Http/Controllers/ProductosController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/app/Models/Producto.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp1/app/Models/Producto.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/database/seeders/ProductoSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp1/database/seeders/ProductoSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/database/seeders/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp1/database/seeders/UserSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/tp1/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/public/css/estilos.css" beforeDir="false" afterPath="$PROJECT_DIR$/tp1/public/css/estilos.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/public/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/public/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/public/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/public/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/public/js/bootstrap.esm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/public/js/bootstrap.esm.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/public/js/bootstrap.esm.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/public/js/bootstrap.esm.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/public/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/public/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/public/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/public/js/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/resources/views/about.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/resources/views/admin/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp1/resources/views/admin/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp1/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp1/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/resources/views/layout/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp1/resources/views/layout/admin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/resources/views/layout/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp1/resources/views/layout/main.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/resources/views/productos/form_editar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp1/resources/views/productos/form_editar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/resources/views/productos/form_nuevo.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp1/resources/views/productos/form_nuevo.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/resources/views/productos/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp1/resources/views/productos/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/resources/views/productos/ver.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp1/resources/views/productos/ver.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp1/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp1/datos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tp1/datos.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,7 +213,7 @@
       <workItem from="1652132807425" duration="10366000" />
       <workItem from="1652197945027" duration="13648000" />
       <workItem from="1652234204463" duration="17307000" />
-      <workItem from="1652251689065" duration="3686000" />
+      <workItem from="1652251689065" duration="4457000" />
     </task>
     <servers />
   </component>
