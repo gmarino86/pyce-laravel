@@ -7,9 +7,11 @@ use Illuminate\Support\Facades\Route;
 //});
 
 Route::get('/',[\App\Http\Controllers\HomeController::class, 'home']);
-Route::get('about',[\App\Http\Controllers\AboutController::class, 'about']);
 
-
+Route::get('elBlog',[\App\Http\Controllers\ErresBlogController::class, 'verBlog']);
+/**
+ * ABM PRODUCTO
+ */
 Route::get('productos',[\App\Http\Controllers\ProductosController::class, 'index'])
     ->name('productos.index');
 Route::get('producto/nuevo',[\App\Http\Controllers\ProductosController::class, 'formCrear'])
@@ -34,7 +36,6 @@ Route::post('producto/{id}/editar',[\App\Http\Controllers\ProductosController::c
 Route::get('admin/dashboard',[\App\Http\Controllers\AdminController::class, 'dashboard'])
     ->middleware(['auth']);
 
-
 Route::get('iniciar-sesion',[\App\Http\Controllers\AuthController::class,'loginFrom'])
     ->name('auth.login.form');
 Route::post('iniciar-sesion',[\App\Http\Controllers\AuthController::class,'loginDo'])
@@ -42,3 +43,4 @@ Route::post('iniciar-sesion',[\App\Http\Controllers\AuthController::class,'login
 Route::post('cerrar-sesion',[\App\Http\Controllers\AuthController::class,'logout'])
     ->name('auth.logout')
     ->middleware(['auth']);
+

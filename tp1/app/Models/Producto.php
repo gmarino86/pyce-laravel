@@ -27,6 +27,8 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|Producto whereUpdatedAt($value)
  * @mixin \Eloquent
  * @property-read \App\Models\ProductoTipo $tipoProducto
+ * @property string|null $imagen
+ * @method static \Illuminate\Database\Eloquent\Builder|Producto whereImagen($value)
  */
 class Producto extends Model
 {

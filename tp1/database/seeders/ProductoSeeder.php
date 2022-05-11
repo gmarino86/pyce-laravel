@@ -16,22 +16,34 @@ class ProductoSeeder extends Seeder
     {
         DB::table('productos')->insert([
             [
-                'producto_id' => 1,
-                'nombre' => "Bolsas 20x30",
-                'descripcion' => "Las bolsas 20x30 son las mas chicas, se usan para....",
-                'precio' => 60000,
-                'producto_tipo_id' => '1',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s')
+                "producto_id"=> 1,
+                "nombre"=> "Bolsa Residuo 45x60",
+                "descripcion"=> "Bolsa grande para residuos",
+                "imagen"=> "residuo45x60.jpg",
+                "precio"=> 95000,
+                "created_at"=> date('Y-m-d H:i:s'),
+                "updated_at"=> date('Y-m-d H:i:s'),
+                "producto_tipo_id"=> 1
             ],
             [
-                'producto_id' => 2,
-                'nombre' => "Bolsas 30x40",
-                'descripcion' => "Las bolsas 30x40 son ideales para....",
-                'precio' => 65000,
-                'producto_tipo_id' => '1',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s')
+                "producto_id"=> 2,
+                "nombre"=> "Bolsa Camiseta 40x50",
+                "descripcion"=> "Ideal para ir a comprar el pan",
+                "imagen"=> "camiseta40x50.jpg",
+                "precio"=> 72000,
+                "created_at"=> date('Y-m-d H:i:s'),
+                "updated_at"=> date('Y-m-d H:i:s'),
+                "producto_tipo_id"=> 1
+            ],
+            [
+                "producto_id"=> 3,
+                "nombre"=> "Bolsa de Arranque 20x30",
+                "descripcion"=> "Ideal para guardar galletitas, yerba, usar para un tachito de tamaño chico, levantar la caca de las mascotas, etc",
+                "imagen"=> "arranque20x30.jpg",
+                "precio"=> 35000,
+                "created_at"=> date('Y-m-d H:i:s'),
+                "updated_at"=> date('Y-m-d H:i:s'),
+                "producto_tipo_id"=> 1
             ]
         ]);
     }

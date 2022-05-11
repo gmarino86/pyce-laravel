@@ -19,3 +19,90 @@ html, body, #app {
 .footer p {
     margin-bottom: 0;
 }
+
+.divCarrousel {
+    width: 100%;
+    height: calc(100vh - 56px);
+    background-image: url(../img/background-black.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.textHeader{
+    text-align: center;
+    padding-top: 29vh;
+    width: 60vw;
+    position: relative;
+    font-size: 2em;
+    color: white;
+    text-shadow: 3px 3px 6px black;
+    left: 20vw;
+}
+
+.pTHeader {
+    color: white;
+    font-size: 12px;
+    width: 70vw;
+    margin: auto;
+    text-shadow: 2px 2px 2px black;
+}
+
+.pildoras {
+    width: 85px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.card {
+    border: 0px;
+}
+.prodImg {
+    border: 1px solid rgba(0,0,0,.125);
+    margin: auto;
+}
+
+.menuBackground {
+    background: #f8f9fa;
+    z-index: 10;
+}
+.ourProp{
+    background: #f9f9f9;
+}
+.textoOurProp{
+    font-size: 14px;
+}
+.fs-6 {
+   font-size: 12px !important;
+}
+.editImage{
+    width: 260px;
+}
+
+@media (min-width: 992px) {
+
+    .textHeader{
+        text-align: center;
+        font-size: 4em;
+        color: white;
+        text-shadow: 3px 3px 6px black;
+    }
+
+    .pTHeader {
+        color: white;
+        font-size: 16px;
+        width: 55vw;
+        margin: auto;
+        text-shadow: 2px 2px 2px black;
+        text-align: center;
+    }
+
+    .prodImg {
+        border: 1px solid rgba(0,0,0,.125);
+        margin: auto;
+        margin-top: 20vh;
+    }
+
+}
+
+

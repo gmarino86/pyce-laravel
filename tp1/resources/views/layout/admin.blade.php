@@ -11,37 +11,49 @@
     <link rel="stylesheet" href="<?= url('css/estilos.css') ?>">
 </head>
 <body>
-<div id="app">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="<?= url('/') ?>">Gaston Marino - Erres</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Abrir/cerrar menú de navegación">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?= url('/') ?>">Dashboard</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?= url('/') ?>">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?= url('/') ?>">Home</a>
-                    </li>
-                </ul>
+    <div id="app">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid menuBackground">
+                <a class="navbar-brand" href="<?= url('/') ?>">
+                    <img src="{{ url('img/erres-logo.svg') }}" alt="Erres Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Abrir/cerrar menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?= url('/') ?>">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?= url('productos') ?>">ABM Productos</a>
+                        </li>
+                        @if(auth()->check())
+                            <li class="nav-item">
+                                <form action="{{ route('auth.logout') }}" method="post">
+                                    @csrf
+                                    <button class="btn btn-link nav-link">{{ auth()->user()->email }} (Salir)</button>
+                                </form>
+                            </li>
+                        @endif
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <main class="container">
-        @yield('main')
-    </main>
+        <main class="container">
+            @yield('main')
+        </main>
 
-    <footer class="footer">
-        <p>Da Vinci &copy; 2022</p>
-    </footer>
-</div>
+        <footer class="footer">
+            <p>Da Vinci &copy; 2022</p>
+        </footer>
+    </div>
 
+    <script src="<?= url('js/bootstrap.js') ?>"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

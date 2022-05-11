@@ -21,6 +21,14 @@ class UserSeeder extends Seeder
                 'password'  =>  \Hash::make('asdasd'),
                 'created_at'    => now(),
                 'updated_at'    => now()
+            ],
+            [
+                'id'    =>  2,
+                'name'  =>  'Santiago',
+                'email' =>  'sara@za.com',
+                'password'  =>  \Hash::make('asdasd'),
+                'created_at'    => now(),
+                'updated_at'    => now()
             ]
         ]);
     }

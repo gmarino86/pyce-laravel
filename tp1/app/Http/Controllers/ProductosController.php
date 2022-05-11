@@ -129,6 +129,13 @@ class ProductosController extends Controller
         $request->validate(Producto::$rules,Producto::$rulesMessages);
         $data = $request->all();
 
+        // Upload de Imagen
+        if ($request->hasFile('imagen') && $request->file('imagen')->isValid()) {
+            $data['imagen'] = date('YmdHis') . "." . $request->file('imagen')->extension();
+
+            $request->file('imagen')->move(public_path('img/'), $data['imagen']);
+        }
+
         $producto->update($data);
 
         return $this->toRoute('productos.index', [
