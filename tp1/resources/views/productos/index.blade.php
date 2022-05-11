@@ -10,7 +10,9 @@
     <h1>Productos</h1>
     <p>Listado de todos los Productos</p>
 
+    @auth()
     <a href="{{ route('producto.nuevo.form') }}">Agregar nuevo producto</a>
+    @endauth
 
     @if($productos->isNotEmpty())
     <table class="table table-striped table-bordered">
@@ -36,11 +38,13 @@
             <td>
                 <div class="d-flex">
                     <a class="btn btn-primary mx-1" href="{{ route('producto.ver', ['id' => $p->producto_id]) }}">Ver</a>
+                    @auth()
                     <a class="btn btn-secondary mx-1" href="{{ route('producto.editar.form', ['id' => $p->producto_id]) }}">Editar</a>
                     <form action="{{ route('producto.eliminar',['id' => $p->producto_id]) }}" method="post">
                         @csrf
                         <button class="btn btn-danger mx-1" type="submit">Eliminar</button>
                     </form>
+                    @endauth
                 </div>
             </td>
         </tr>

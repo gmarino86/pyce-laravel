@@ -29,9 +29,22 @@
                     <li class="nav-item">
                         <a class="nav-link" href="<?= url('productos') ?>">Productos</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?= url('admin/dashboard') ?>">Administración</a>
-                    </li>
+                    @if(auth()->guest())
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?= route('auth.login.form') ?>">Login</a>
+                        </li>
+                    @endif
+                    @if(auth()->check())
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?= url('admin/dashboard') ?>">Administración</a>
+                        </li>
+                        <li class="nav-item">
+                            <form action="{{ route('auth.logout') }}" method="post">
+                                @csrf
+                                <button class="btn btn-link nav-link">{{ auth()->user()->email }} (Salir)</button>
+                            </form>
+                        </li>
+                    @endif
                 </ul>
             </div>
         </div>
@@ -39,7 +52,10 @@
 
     <main class="container">
         @if(Session::has('message.success'))
-            <div class="alert alert-success my-3">{{ Session::get('message.success') }}</div>
+            <div class="alert alert-success mb-3">{!! Session::get('message.success') !!}</div>
+        @endif
+        @if(Session::has('message.error'))
+            <div class="alert alert-danger mb-3">{!! Session::get('message.error') !!}</div>
         @endif
 
         @yield('main')

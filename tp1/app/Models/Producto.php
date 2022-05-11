@@ -33,7 +33,7 @@ class Producto extends Model
     protected $table = "productos";
     protected $primaryKey = "producto_id";
 
-    protected $fillable = ['nombre','descripcion','precio','producto_tipo_id'];
+    protected $fillable = ['nombre','descripcion','precio','producto_tipo_id','imagen'];
 
     public static $rules = [
         'nombre'            => 'required|min:2',

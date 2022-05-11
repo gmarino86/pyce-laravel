@@ -14,7 +14,7 @@
         <div class="alert alert-danger">Hay errores de validación</div>
     @endif
 
-    <form action="{{ route('producto.nuevo.form') }}" method="post">
+    <form action="{{ route('producto.nuevo.form') }}" method="post" enctype="multipart/form-data">
         @csrf
         <div class="mb-3">
             <label for="nombre" class="form-label">Nombre</label>
@@ -61,6 +61,21 @@
         </div>
 
         <div class="mb-3">
+            <label for="imagen" class="form-label">Imágen</label>
+            <input
+                type="file"
+                id="imagen"
+                name="imagen"
+                class="form-control @error('imagen') is-invalid @enderror"
+                @error('imagen') aria-describedby="error-imagen" @enderror
+                value="{{ old('imagen') }}"
+            >
+            @error('imagen')
+            <div class="text-danger" id="error-imagen">{{ $message }}</div>
+            @enderror
+        </div>
+
+        <div class="mb-3">
             <label for="producto_tipo_id" class="form-label">Tipo de producto</label>
             <select
                 name="producto_tipo_id"
@@ -77,9 +92,9 @@
                     >{{ $tp->nombre }}</option>
                 @endforeach
             </select>
-                @error('producto_tipo_id')
-                <div class="text-danger" id="error-producto_tipo_id">{{ $message }}</div>
-                @enderror
+            @error('producto_tipo_id')
+            <div class="text-danger" id="error-producto_tipo_id">{{ $message }}</div>
+            @enderror
         </div>
 
         <button type="submit" class="btn btn-primary">Crear</button>
