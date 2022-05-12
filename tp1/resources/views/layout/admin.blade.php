@@ -26,9 +26,21 @@
                             <a class="nav-link" href="<?= url('/') ?>">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?= url('productos') ?>">ABM Productos</a>
+                            <a class="nav-link" href="<?= route('blog') ?>">Blog</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?= route('tienda.ver') ?>">Tienda</a>
+                        </li>
+
+                        @if(auth()->guest())
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?= route('auth.login.form') ?>">Login</a>
+                            </li>
+                        @endif
                         @if(auth()->check())
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?= url('productos') ?>">ABM Productos</a>
+                            </li>
                             <li class="nav-item">
                                 <form action="{{ route('auth.logout') }}" method="post">
                                     @csrf

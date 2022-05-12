@@ -8,7 +8,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/',[\App\Http\Controllers\HomeController::class, 'home']);
 
-Route::get('elBlog',[\App\Http\Controllers\ErresBlogController::class, 'verBlog']);
+Route::get('elBlog',[\App\Http\Controllers\ErresBlogController::class, 'verBlog'])
+->name('blog');
 /**
  * ABM PRODUCTO
  */
@@ -34,7 +35,11 @@ Route::post('producto/{id}/editar',[\App\Http\Controllers\ProductosController::c
     ->middleware(['auth']);
 
 Route::get('admin/dashboard',[\App\Http\Controllers\AdminController::class, 'dashboard'])
+    ->name('admin.dashboard')
     ->middleware(['auth']);
+
+Route::get('tienda', [\App\Http\Controllers\TiendaController::class, 'ver'])
+    ->name('tienda.ver');
 
 Route::get('iniciar-sesion',[\App\Http\Controllers\AuthController::class,'loginFrom'])
     ->name('auth.login.form');

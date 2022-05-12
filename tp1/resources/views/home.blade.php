@@ -9,28 +9,28 @@
 
     <div class="container my-5">
         <div class="card-group">
-            <div class="card" data-aos="fade-up" data-aos-delay="100">
+            <div class="card sBorde" data-aos="fade-up" data-aos-delay="100">
                 <img src="{{ url('img/economiaCircular.svg') }}" class="card-img-top pildoras" alt="economiaCircular">
                 <div class="card-body">
                     <h2 class="card-title text-center fs-3">Economía Circular</h2>
                     <p class="card-text text-center fs-6">Los residuos se utilizan como materia prima para crear nuevos productos.</p>
                 </div>
             </div>
-            <div class="card" data-aos="fade-up" data-aos-delay="200">
+            <div class="card sBorde" data-aos="fade-up" data-aos-delay="200">
                 <img src="{{ url('img/consumoResponsable.svg') }}" class="card-img-top pildoras" alt="consumoResponsable">
                 <div class="card-body">
                     <h2 class="card-title text-center fs-3">Consumo Responsable</h2>
                     <p class="card-text text-center fs-6">Como consumidores tenemos el poder de elegir productos sustentables.</p>
                 </div>
             </div>
-            <div class="card" data-aos="fade-up" data-aos-delay="300">
+            <div class="card sBorde" data-aos="fade-up" data-aos-delay="300">
                 <img src="{{ url('img/concienciaAmbiental.svg') }}" class="card-img-top pildoras" alt="concienciaAmbiental">
                 <div class="card-body">
                     <h2 class="card-title text-center fs-3">Conciencia Ambiental</h2>
                     <p class="card-text text-center fs-6">Cada uno es responsable de los residuos que genera y de reducir su impacto.</p>
                 </div>
             </div>
-            <div class="card" data-aos="fade-up" data-aos-delay="400">
+            <div class="card sBorde" data-aos="fade-up" data-aos-delay="400">
                 <img src="{{ url('img/solucionesSustentables.svg') }}" class="card-img-top pildoras" alt="solucionesSustentables">
                 <div class="card-body">
                     <h2 class="card-title text-center fs-3">Soluciones Sustentables</h2>

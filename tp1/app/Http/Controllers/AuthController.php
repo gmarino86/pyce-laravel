@@ -26,7 +26,7 @@ class AuthController extends Controller
         }
 
         return redirect()
-            ->route('productos.index')
+            ->route('admin.dashboard')
             ->with('message.success', 'Bienvenido a Erres!');
     }
 

@@ -1,3 +1,7 @@
 Diseño y Desarrollo Web, Portales y Comercio Electrónico, Cuarto cuatrimestre, 2022, Noche, AV, Marino Gastón, Santiago Gallino, 1er parcial.
 
 https://github.com/gmarino86/pyce-laravel.git
+
+usuario de prueba
+user: zara@za.com
+pass: asdasd

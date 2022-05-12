@@ -53,10 +53,10 @@ html, body, #app {
     margin: auto;
     margin-top: 30px;
 }
-
-.card {
+.sBorde{
     border: 0px;
 }
+
 .prodImg {
     border: 1px solid rgba(0,0,0,.125);
     margin: auto;

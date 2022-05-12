@@ -2,7 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8aa4e76d-b682-4f8b-b9f8-715420b601e9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/marino-gaston.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tp1/app/Http/Controllers/TiendaController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tp1/app/Models/Blog.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tp1/database/migrations/2022_05_11_164337_create_blog_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tp1/database/seeders/BlogSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tp1/public/img/20220511161917.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tp1/public/img/humedales.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tp1/public/img/queReciclo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tp1/public/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tp1/public/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tp1/public/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tp1/public/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tp1/public/js/bootstrap.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tp1/public/js/bootstrap.esm.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tp1/public/js/bootstrap.esm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tp1/public/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tp1/public/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tp1/public/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tp1/public/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tp1/public/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tp1/resources/views/tienda/ver.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp1/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp1/app/Http/Controllers/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp1/app/Http/Controllers/ErresBlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp1/app/Http/Controllers/ErresBlogController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp1/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp1/database/seeders/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tp1/datos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tp1/datos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp1/public/css/estilos.css" beforeDir="false" afterPath="$PROJECT_DIR$/tp1/public/css/estilos.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp1/resources/views/erresBlog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp1/resources/views/erresBlog.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp1/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp1/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp1/resources/views/layout/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp1/resources/views/layout/admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp1/resources/views/layout/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp1/resources/views/layout/main.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp1/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp1/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,20 +201,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;database.data.extractors.current.export.id&quot;: &quot;JSON-Groovy.json.groovy&quot;,
-    &quot;database.data.extractors.current.id&quot;: &quot;JSON-Groovy.json.groovy&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/xampp814/htdocs/laravel/clase1/resources/views/productos&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "database.data.extractors.current.export.id": "JSON-Groovy.json.groovy",
+    "database.data.extractors.current.id": "JSON-Groovy.json.groovy",
+    "last_opened_file_path": "C:/xampp814/htdocs/laravel/clase1/resources/views/productos",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mongo",
+      "mariadb"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp814\htdocs\laravel\clase1\resources\views\productos" />
@@ -213,7 +252,8 @@
       <workItem from="1652132807425" duration="10366000" />
       <workItem from="1652197945027" duration="13648000" />
       <workItem from="1652234204463" duration="17307000" />
-      <workItem from="1652251689065" duration="4457000" />
+      <workItem from="1652251689065" duration="5692000" />
+      <workItem from="1652286078444" duration="15723000" />
     </task>
     <servers />
   </component>
