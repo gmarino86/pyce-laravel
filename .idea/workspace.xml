@@ -2,39 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8aa4e76d-b682-4f8b-b9f8-715420b601e9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/marino-gaston.rar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp1/app/Http/Controllers/TiendaController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp1/app/Models/Blog.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp1/database/migrations/2022_05_11_164337_create_blog_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp1/database/seeders/BlogSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp1/public/img/20220511161917.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp1/public/img/humedales.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp1/public/img/queReciclo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp1/public/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp1/public/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp1/public/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp1/public/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp1/public/js/bootstrap.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp1/public/js/bootstrap.esm.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp1/public/js/bootstrap.esm.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp1/public/js/bootstrap.esm.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp1/public/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp1/public/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp1/public/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp1/public/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp1/resources/views/tienda/ver.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tp1/public/img/20220512020620.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp1/app/Http/Controllers/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/app/Http/Controllers/ErresBlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp1/app/Http/Controllers/ErresBlogController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp1/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/datos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tp1/datos.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/public/css/estilos.css" beforeDir="false" afterPath="$PROJECT_DIR$/tp1/public/css/estilos.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/resources/views/erresBlog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp1/resources/views/erresBlog.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp1/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/resources/views/layout/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp1/resources/views/layout/admin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/resources/views/layout/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp1/resources/views/layout/main.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/tp1/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp1/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/tp1/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp1/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/tp1/composer.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +181,7 @@
     "WebServerToolWindowFactoryState": "false",
     "database.data.extractors.current.export.id": "JSON-Groovy.json.groovy",
     "database.data.extractors.current.id": "JSON-Groovy.json.groovy",
-    "last_opened_file_path": "C:/xampp814/htdocs/laravel/clase1/resources/views/productos",
+    "last_opened_file_path": "C:/xampp814/htdocs/armaelequipo/aee",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
@@ -254,6 +225,7 @@
       <workItem from="1652234204463" duration="17307000" />
       <workItem from="1652251689065" duration="5692000" />
       <workItem from="1652286078444" duration="15723000" />
+      <workItem from="1652320086383" duration="2565000" />
     </task>
     <servers />
   </component>
